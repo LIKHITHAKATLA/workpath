@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+         * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background-image: url('slide1.jpeg');
+            background-size: cover;
+        }
+        .header {
+            background-color: #CC6600;
+            padding: 7px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: purple;
+            padding: 10px 0;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: aqua;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .slideshow-container {
+            max-width: 700px;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active {
+            background-color: #717171;
+        }
+        @media screen and (max-width: 768px) {
+            #navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    
+</style>
+</head>
+<body>
+    <body background="slide1.jpeg">
+    &emsp;
+    <img src="logo1.jpeg"  height="120" width="150" align="left" vspace="30.5"
+    hspace="30">
+    <img src="logo2.jpeg"  height="120" width="120" align="right" vspace="30.5"
+    hspace="30"> <link rel="stylesheet" type="text/css" href="styles.css"><header>
+    <p align="justify">
+    <h1><center><b>WORK PATH</b></center></h1>
+    <dl><center><h2>EMPLOYMENT FOR SEMI LITERATES</h2><center></dl>
+    </p></header>
+    <div id="navbar">
+<div class="dropdown">
+<button class="dropbtn">Home</button>
+<div class="dropdown-content">
+    <a href="home.html">Home</a>
+</div>
+</div>
+<div class="dropdown" >
+
+<button class="dropbtn">About Us</button>
+<div class="dropdown-content" style="left:0;">
+<a href="about.html">About Us</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Registration</button>
+<div class="dropdown-content">
+<a href="registerform1.html">Register</a>
+
+</div>
+</div>
+
+<div class="dropdown" >
+<button class="dropbtn">Jobs</button>
+<div class="dropdown-content">
+<a href="jutebags.html">Jute Bags</a>
+<a href="candlemaking.html">Candle Making</a>
+<a href="packing.html">Packing</a>
+<a href="stitching.html">Stitching</a>
+<a href="homefoods.html">Home Foods</a>
+<a href="cottonwicks.html">Cotton Wicks</a>
+
+</div>
+</div>
+
+
+<div class="dropdown">
+<button class="dropbtn">Service Issues</button>
+<div class="dropdown-content">
+<a href="serviceissues.html">Service Issues</a>
+
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Terms and Conditions</button>
+<div class="dropdown-content">
+<a href="terms3.html">Terms & Conditions</a>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Privacy Policy</button>
+<div class="dropdown-content">
+<a href="workpathprivacy.html">Privacy Policy</a>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Frequently asked questions</button>
+<div class="dropdown-content">
+<a href="questions1.html">FAQs</a>
+</div>
+</div>
+</div>
+<br>
+<br>&emsp;&emsp;
+</head>
+<body>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="slide2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<img src="slide5.jpg" style="width:100%" >
+</div>
+<div class="mySlides fade">
+<img src="slide6.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="slide8.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="slide4.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="slide9.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+<img src="slide10.jpg" style="width:100%">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<br>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 2000);
+}
+</script>
+</body>
+</body>
+</html> 
+
+    
+    
+ 
